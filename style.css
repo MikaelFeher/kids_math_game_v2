@@ -1,0 +1,53 @@
+body {
+    background-image: url('math-background.jpg');
+}
+input {
+    text-align: center;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.btn {
+    border-radius: 10px;
+}
+
+.container {
+	height: 50%;
+	margin-top: 10%;
+}
+
+#intro_area h1{
+    font-size: 2.5em;
+}
+
+#left_content, #right_content {
+    height: 300px;
+}
+
+#number_buttons_container {
+    width: 100%;
+    margin: 5% auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.number_buttons {
+	/* width: 30%; */
+	height: 75px;
+	box-shadow: 0 0 15px 0 #333;
+	/* font-size: 3.2em; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	border-radius: 10%;
+}
+
+#quit_button_container {
+    margin: 3%;
+}
+
+#reset_game_button {
+    margin: 3%;
+}

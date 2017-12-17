@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <!--Import Google Icon Font-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!-- Import Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Kids Math Game v2</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="intro_area" class="center-align">
+            <h1>Välkommen till matte spelet</h1>
+            <p>Du kommer att få räkna addition, alltså plussa ihop 2 tal.
+                <br> Din uppgift är att räkna ut och skriva in vad summan blir.</p>
+            <div id="player_id_container">
+                <p>Börja med att skriva in ditt namn</p>
+                <input class="center-text black-text white" type="text" id="player_name_input" placeholder="Skriv ditt namn här...">
+                <button class="btn green waves-effect waves-light btn-large" id="player_name_input_button">Börja spela<i class="material-icons right">done</i></button>
+            </div>
+        </div>
+        <div id="main_game_container" class="row white lighten-4">
+            <div id="left_content" class="center-align col m6 s12">
+                <div id="main_player_area">
+                    <p>Vad blir summan av talen,
+                        <span id="player_name_display">Viktor</span>?</p>
+                </div>
+                <div id="main_game_area">
+                    <h1>
+                        <span id="first_number">1</span> +
+                        <span id="second_number">1</span> =
+                        <span id="sum">?</span>
+                    </h1>
+                    <button class="btn red"  id="clear_button"> <i class="material-icons left">delete</i> Sudda</button>
+                    <button class="btn green"  id="player_guess_button"><i class="material-icons left">add</i>Räkna</button>
+                    <div id="result_output"></div>
+                    <button class="btn green" id="reset_game_button">Nytt försök <i class="material-icons right">autorenew</i></button>
+                </div>
+            </div>
+            <div id="right_content" class="col m6 s12">
+                <div id="number_buttons_container" class="row">
+                    <div class="number_buttons btn waves-effect deep-purple lighten-4 col s1">0</div>
+                    <div class="number_buttons btn waves-effect deep-purple lighten-4 col s1">1</div>
+                    <div class="number_buttons btn waves-effect deep-purple lighten-4 col s1">2</div>
+                    <div class="number_buttons btn waves-effect deep-purple lighten-4 col s1">3</div>
+                    <div class="number_buttons btn waves-effect deep-purple lighten-4 col s1">4</div>
+                    <div class="number_buttons btn waves-effect deep-purple lighten-4 col s1">5</div>
+                    <div class="number_buttons btn waves-effect deep-purple lighten-4 col s1">6</div>
+                    <div class="number_buttons btn waves-effect deep-purple lighten-4 col s1">7</div>
+                    <div class="number_buttons btn waves-effect deep-purple lighten-4 col s1">8</div>
+                    <div class="number_buttons btn waves-effect deep-purple lighten-4 col s1">9</div>
+                    
+                </div>
+                <div class="row right" id="quit_button_container">
+                    <div id="quit_button" class="btn btn-large red darken-3 white-text">Avsluta <i class="material-icons right">exit_to_app</i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
